@@ -2,6 +2,17 @@ import React, { useState } from 'react'
 import AttemptQuestion from '../AttemptQuestion/AttemptQuestion'
 import Result from '../Result/Result'
 import tapAudio from '../../../assets/sounds/select.wav'
+import pikachu from '../../../assets/images/pikachu.jpg'
+import blastoise from '../../../assets/images/blastoise.gif'
+import bulbasaur from '../../../assets/images/bulbasaur.jpg'
+import charlizard from '../../../assets/images/charlizard.jpg'
+import mewtwo from '../../../assets/images/mewtwo.jpg'
+import squirtle from '../../../assets/images/squirtle.jpg'
+import mew from '../../../assets/images/mew.jpg'
+import onix from '../../../assets/images/onix.jpg'
+import magikarp from '../../../assets/images/magikarp.png'
+import snorlax from '../../../assets/images/snorlax.jpg'
+
 
 export default function Questions() {
 
@@ -27,92 +38,92 @@ export default function Questions() {
 
     const questions = [
         {
-            "content": "How many time zones are there in Russia?",
-            "option1": "11",
-            "option2": "8",
-            "option3": "14",
-            "option4": "9",
+            "content": pikachu,
+            "option1": "pikachu",
+            "option2": "gengar",
+            "option3": "moltres",
+            "option4": "zapdos",
             "answer": 1
         },
     
         {
-            "content": "What’s the capital of Canada?",
-            "option1": "New York",
-            "option2": "Toronto",
-            "option3": "Ottawa",
-            "option4": "Rio de Janeiro",
-            "answer": 2
+            "content": magikarp,
+            "option1": "blastoise",
+            "option2": "charlizard",
+            "option3": "gyadrados",
+            "option4": "magikarp",
+            "answer": 4
         },
     
         {
-            "content": "What’s the smallest country in the world?",
-            "option1": "The Vatican",
-            "option2": "REPUBLIC OF NAURU",
-            "option3": "TUVALU",
-            "option4": "Monaco",
-            "answer": 2
-        },
-    
-        {
-            "content": "The first Bollywood film to go plastic-free is",
-            "option1": "War",
-            "option2": "Coolie No. 1",
-            "option3": "Dream Girl",
-            "option4": "Mission Mangal",
-            "answer": 2
-        },
-    
-        {
-            "content": "Astronomers found how many asteroids that once belonged to a distant star system have been found orbiting the Sun between Jupiter and Neptune?",
-            "option1": "12",
-            "option2": "18",
-            "option3": "19",
-            "option4": "11",
+            "content": blastoise,
+            "option1": "venasaur",
+            "option2": "mew",
+            "option3": "blastoise",
+            "option4": "ghastly",
             "answer": 3
         },
     
         {
-            "content": "Which country will host the 2022 Women's Football Asian Cup?",
-            "option1": "China",
-            "option2": "India",
-            "option3": "Pakistan",
-            "option4": "Bangladesh",
+            "content": bulbasaur,
+            "option1": "pidgey",
+            "option2": "bulbasaur",
+            "option3": "dragonite",
+            "option4": "raichu",
             "answer": 2
         },
     
         {
-            "content": "What is Indian Institute of Science rank in the Times Higher Education Asia University Ranking?",
-            "option1": "36th",
-            "option2": "46th",
-            "option3": "26th",
-            "option4": "16th",
+            "content": charlizard,
+            "option1": "mewtwo",
+            "option2": "onix",
+            "option3": "gengar",
+            "option4": "charlizard",
+            "answer": 4
+        },
+    
+        {
+            "content": mewtwo,
+            "option1": "mew",
+            "option2": "mewtwo",
+            "option3": "deoxys",
+            "option4": "latios",
+            "answer": 2
+        },
+    
+        {
+            "content": onix,
+            "option1": "latias",
+            "option2": "moltres",
+            "option3": "onix",
+            "option4": "articuno",
+            "answer": 3
+        },
+    
+        {
+            "content": snorlax,
+            "option1": "snorlax",
+            "option2": "magmar",
+            "option3": "dragonair",
+            "option4": "zapdos",
             "answer": 1
         },
     
         {
-            "content": "Which UK college has offered to teach its students 'Hinglish', to students for jobs in India?",
-            "option1": "Sheffield Hallam University",
-            "option2": "Portsmouth College",
-            "option3": "Highbury College",
-            "option4": "Durham University",
-            "answer": 2
+            "content": squirtle,
+            "option1": "squirtle",
+            "option2": "blastoise",
+            "option3": "bulbasuar",
+            "option4": "charmander",
+            "answer": 1
         },
     
         {
-            "content": "The latest Railway zone of India is Headquartered at ________?",
-            "option1": "Jalandhar",
-            "option2": "Visakhapatnam",
-            "option3": "Guwahati",
-            "option4": "Lucknow",
-            "answer": 2
-        },
-    
-        {
-            "content": "Which day World Teachers Day is celebrated?",
-            "option1": "7th October",
-            "option2": "3rd October",
-            "option3": "4th October",
-            "option4": "5th October",
+            "content": mew,
+            "option1": "evee",
+            "option2": "lapras",
+            "option3": "margikarp",
+            "option4": "mew",
             "answer": 4
         }
     ]

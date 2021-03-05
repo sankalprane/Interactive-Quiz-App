@@ -57,7 +57,9 @@ export default function AttemptQuestion(props) {
         <div className="main-body">
             <Header></Header>
             <div className="body-inner">
-                <div className="question-div"> { singleQuestion.content } </div>
+                <div className="question-div">
+                    <img src={singleQuestion.content} width="300" height="90%%"></img>
+                </div>
 
                 <div className="divider"></div>
 

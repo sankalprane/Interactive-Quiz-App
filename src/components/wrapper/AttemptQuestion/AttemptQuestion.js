@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import './AttemptQuestion.css'
 import Header from '../Header/Header';
 import BottomButton from '../BottomButton/BottomButton';
+import tapAudio from '../../../assets/sounds/select.wav'
+import successAudio from '../../../assets/sounds/success.wav'
+import wrongAudio from '../../../assets/sounds/wrong.wav'
 
 export default function AttemptQuestion(props) {
 
@@ -15,17 +18,39 @@ export default function AttemptQuestion(props) {
         setSubmitted(res => false);
     }, [props.id]);
 
+    
+    function selectSound() {
+        let sound = new Audio(tapAudio);
+        sound.play();
+    }
+
+    function successSound() {
+        let sound = new Audio(successAudio);
+        sound.play();
+    }
+
+    function wrongSound() {
+        let sound = new Audio(wrongAudio);
+        sound.play();
+    }
+
     var singleQuestion = props.question;
-    console.log(singleQuestion);
+    // console.log(singleQuestion);
 
     function setOption(idx){
         if (!submitted) {
+            selectSound();
             setSelectedOption(idx);
         }
     }
 
     function submit() {
         setSubmitted(true);
+        if (singleQuestion.answer === selectedOption) {
+            successSound();
+        } else {
+            wrongSound();
+        }
     }
 
     return (

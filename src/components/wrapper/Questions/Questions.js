@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import AttemptQuestion from '../AttemptQuestion/AttemptQuestion'
+import Result from '../Result/Result'
+import tapAudio from '../../../assets/sounds/select.wav'
 
 export default function Questions() {
 
@@ -7,6 +9,20 @@ export default function Questions() {
 
     function nextQuestion() {
         setQuestionNumber(idx => idx + 1);
+        selectSound();
+    }
+
+    function selectSound() {
+        let sound = new Audio(tapAudio);
+        sound.play();
+    }
+
+    function PageToDisplay() {
+        if (questionNumber >= 10) {
+            return <Result/>
+        } else {
+            return  <AttemptQuestion id={questionNumber} question={ questions[questionNumber]} nextQuestion={nextQuestion}/>
+        }
     }
 
     const questions = [
@@ -101,6 +117,6 @@ export default function Questions() {
         }
     ]
     return (
-        <AttemptQuestion id={questionNumber} question={ questions[questionNumber]} nextQuestion={nextQuestion}/>
+        <PageToDisplay></PageToDisplay>
     )
 }

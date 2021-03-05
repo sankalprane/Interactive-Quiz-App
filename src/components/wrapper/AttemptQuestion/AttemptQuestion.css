@@ -32,3 +32,13 @@
     background-color: #0081CC;
     box-shadow: 0px 8px 0px -1px #0081CC;
 }
+
+.correct-option-div {
+    background-color: #27AE60;
+    box-shadow: 0px 8px 0px -1px #27AE60;
+}
+
+.wrong-option-div {
+    background-color: #FD6163;
+    box-shadow: 0px 8px 0px -1px #FD6163;
+}

@@ -1,10 +1,10 @@
 import './App.css';
-import AttemptQuestion from './components/wrapper/AttemptQuestion/AttemptQuestion';
+import Questions from './components/wrapper/Questions/Questions';
 
 function App() {
   return (
     <div className="App">
-      <AttemptQuestion></AttemptQuestion>
+      <Questions></Questions>
     </div>
   );
 }
